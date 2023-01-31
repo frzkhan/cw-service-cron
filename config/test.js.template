@@ -1,0 +1,14 @@
+module.exports = {
+  service: 'cron',
+  fastify: { active: true, port: 0 },
+  mongodb: {
+    active: true,
+    databases: [
+      {
+        name: 'data',
+        db: 'cron',
+        options: {}
+      }
+    ]
+  }
+}
